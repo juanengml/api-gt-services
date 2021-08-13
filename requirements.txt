@@ -1,0 +1,5 @@
+console_logging
+pymongo
+Flask
+flask-restful
+Faker
