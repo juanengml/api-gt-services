@@ -9,7 +9,7 @@ import os
 app = Flask(__name__)
 api = Api(app)
 
-endpoint_db = "mongodb://44.196.172.92:27017/" #os.getenv('MONGODB_URL')
+endpoint_db = os.getenv('MONGODB_URL')
 
 client = MongoClient(endpoint_db)
 db = client['firma_database']
