@@ -51,11 +51,11 @@ def data_iot(): # dados de iot solo
 
 class Client(Resource):
     def get(self):
-        return [ data_users() for _ in  range(choice(range(1000,5000))) ]
+        return {"data":[ data_users() for _ in  range(choice(range(1000,5000))) ]}
 
 class FarmIot(Resource):
     def get(self):
-        return [ data_iot() for _ in range(choice(range(1000,5000)))]
+        return {"data":[ data_iot() for _ in range(choice(range(1000,5000)))]}
 
 class alive(Resource):
     def get(self):
